@@ -62,6 +62,7 @@ class APIError(Exception):
         super(APIError, self).__init__(message)
         self.extra_data = extra_data
 
+#somewhere around here would be a great place for purge_contacts_and_their_messages
 
 def create_campaign_events(file_name, campaign_id, client):
     campaign_id = str(campaign_id)
